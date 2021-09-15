@@ -26,7 +26,9 @@ D3 D3 and D3 D3s compute the DNA density and DisTP. The resulted DNA and DisTP a
   ```
 ## Construct Density-DisTP Matrix
 D3 sta gives the density and DisTP ranges, and a scatter plot as below.
+
 D3 map puts the bins on density-DisTP matrix, and stores the probability of genomic bins appearing at matrix bins.
+
 D3 ave computes the average and standard deviation (sd) of density and DisTP.
   ```
   python D3.py sta test_result/den_dtp/den_dtp test_data/hg19_diplo_20k.window.bed test_result/test_map_sta
