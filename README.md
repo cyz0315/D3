@@ -17,6 +17,7 @@ D3 was tested on Python v3.9.1 (macOS and DeepinOS), with the following basic re
 #  Tipycal Workflow
 Below is a typical workflow using the test data.
 ## Compute DNA Density and DisTP
+D3 D3 and D3 D3s compute the DNA density and DisTP. The resulted DNA and DisTP are stored in bed-like format file.
   ```
   cd PATH/WHERE/D3/AT
   mkdir -p test_result/den_dtp
@@ -24,7 +25,9 @@ Below is a typical workflow using the test data.
   python D3.py D3s test_data/dg_files test_data/hg19_diplo_20k.window.bed test_result/den_dtp
   ```
 ## Construct Density-DisTP Matrix
-
+D3 sta gives the density and DisTP ranges, and a scatter plot as below.
+D3 map puts the bins on density-DisTP matrix, and stores the probability of genomic bins appearing at matrix bins.
+D3 ave computes the average and standard deviation (sd) of density and DisTP.
   ```
   python D3.py sta test_result/den_dtp/den_dtp test_data/hg19_diplo_20k.window.bed test_result/test_map_sta
   python D3.py map test_result/den_dtp/den_dtp test_data/hg19_diplo_20k.window.bed test_result/test_map
