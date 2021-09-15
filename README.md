@@ -17,7 +17,7 @@ D3 was tested on Python v3.9.1 (macOS and DeepinOS), with the following basic re
 #  Tipycal Workflow
 Below is a typical workflow using the test data.
 ## Compute DNA Density and DisTP
-D3 D3 and D3 D3s compute the DNA density and DisTP. The resulted DNA and DisTP are stored in bed-like format file.
+D3.py D3 and D3.py D3s compute the DNA density and DisTP. The resulted DNA and DisTP are stored in bed-like format file.
   ```
   cd PATH/WHERE/D3/AT
   mkdir -p test_result/den_dtp
@@ -25,17 +25,22 @@ D3 D3 and D3 D3s compute the DNA density and DisTP. The resulted DNA and DisTP a
   python D3.py D3s test_data/dg_files test_data/hg19_diplo_20k.window.bed test_result/den_dtp
   ```
 ## Construct Density-DisTP Matrix
-D3 sta gives the density and DisTP ranges, and a scatter plot as below.
+D3.py sta gives the density and DisTP ranges, and a scatter plot as below.
 
-D3 map puts the bins on density-DisTP matrix, and stores the probability of genomic bins appearing at matrix bins.
+D3.py map puts the bins on density-DisTP matrix, and stores the probability of genomic bins appearing at matrix bins (states).
 
-D3 ave computes the average and standard deviation (sd) of density and DisTP.
+D3.py ave computes the average and standard deviation (sd) of density and DisTP.
   ```
   python D3.py sta test_result/den_dtp/den_dtp test_data/hg19_diplo_20k.window.bed test_result/test_map_sta
   python D3.py map test_result/den_dtp/den_dtp test_data/hg19_diplo_20k.window.bed test_result/test_map
   python D3.py ave test_map.txt test_ave.txt
   ```
+ ![test_map_sta](https://user-images.githubusercontent.com/37327473/133371032-8a9061b8-c91f-4b9b-a143-a850fcafa32f.png)
+
 ## Marker Enrichment
+D3.py marks indexes and concatenates the markers.
+D3.py enrich plotted the enrichments of markers individually.
+D3.py hiera ranks the matrix bins (states) by hierarchy cluster.
 ```
 python D3.py marks test_data/marks/ test_data/hg19_diplo_20k.window.bed test_mark.mark.txt
 mkdir mark_enrich
