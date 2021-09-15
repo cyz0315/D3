@@ -47,6 +47,14 @@ mkdir mark_enrich
 python D3.py enrich test_map.txt test_mark.mark.txt mark_enrich/gm12878
 python D3.py hiera test_map.txt test_mark.mark.txt test_hiera
 ```
-  
+Markers Enrichments:
+[gm12878_1-Active-Promoter_histplot.pdf](https://github.com/cyz0315/D3/files/7166776/gm12878_1-Active-Promoter_histplot.pdf)
+[gm12878_13-Heterochrom_histplot.pdf](https://github.com/cyz0315/D3/files/7166777/gm12878_13-Heterochrom_histplot.pdf)
+
+Hierarchy cluster:
+[test_hiera_value_hierarchy.pdf](https://github.com/cyz0315/D3/files/7166779/test_hiera_value_hierarchy.pdf)
+[test_hiera_hierarchy_hist.pdf](https://github.com/cyz0315/D3/files/7166780/test_hiera_hierarchy_hist.pdf)
+
+
 # License
 D3 is free for non-commercial use by academic, government, and non-profit/not-for-profit institutions. A commercial version of the software is available and licensed through Xi’an Jiaotong University. For more information, please contact with Yizhuo che (cyz0315@stu.xjtu.edu.cn) or Kai Ye (kaiye@xjtu.edu.cn).
